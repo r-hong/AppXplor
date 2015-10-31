@@ -1,6 +1,4 @@
-import numpy as np
 import pandas as pd
-import datetime
 import urllib
 from bokeh.plotting import *
 from bokeh.models import HoverTool
