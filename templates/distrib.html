@@ -1,0 +1,40 @@
+<!doctype html>
+<title>Geografical (NY) distribution of selected features </title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_xplor.css')}}'>
+<div class=page>
+  <h1>Territorial analysis</h1>
+  <div class=metanav>
+
+<h4>
+Every NY Borough is selected by default 
+</h4>
+
+<form id='form2' method='post' action='getDistrib' > <!-- action is the URL you want to move to next-->
+	<p>
+	Feature: <br />
+	<select name="feat">
+		<option value="Market value per square foot">Market value per square foot</option>
+		<option value="Full market value">Full market value</option>
+		<option value="Year Built">Year Built</option>
+		<option value="Gross income per square foot">Gross income per square foot</option>
+	</select>
+	</p>
+
+        <p>
+        Year: <br />
+        <select name="year">
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+        </select>
+        </p>
+
+	<div style="width:550px;height:3px;border:4px solid #AACBE2;"></div>
+	<p><br/>
+	<input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+	</p>
+</form>
+
+</div>
+</div>

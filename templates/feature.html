@@ -1,0 +1,85 @@
+<!doctype html>
+<title>Comparison of the probability distributions of a selected feature</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_xplor.css')}}'>
+<div class=page>
+  <h1>Feature Comparison</h1>
+  <div class=metanav>
+
+<h4>
+Exploring a selected feature on two different conditions: the year and the NY Borough. 
+</h4>
+
+<form id='form2' method='post' action='getFeat' > <!-- action is the URL you want to move to next-->
+<h4>
+Common feature
+</h4>
+	<p>
+	Feature: <br />
+	<select name="feat">
+		<option value="Market value per square foot">Market value per square foot</option>
+		<option value="Full market value">Full market value</option>
+		<option value="Year Built">Year Built</option>
+		<option value="Gross income per square foot">Gross income per square foot</option>
+	</select>
+	</p>
+
+	<div style="width:550px;height:3px;border:4px solid #AACBE2;"></div>
+	<h4>
+	Group A
+	</h4>
+
+	<p>
+	NY Borough: <br />
+	<select name="boA">
+		<option value="Bronx">Bronx</option>
+		<option value="Brooklyn">Brooklyn</option>
+		<option value="Manhattan">Manhattan</option>
+		<option value="Queens">Queens</option>
+		<option value="Staten Island">Staten Island</option>        
+	</select>
+	</p>
+
+	<p>
+	Year: <br />
+	<select name="yA">
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+	</select>
+	</p>
+ 
+	<div style="width:550px;height:3px;border:4px solid #AACBE2;"></div>
+	<h4>
+	Group B
+	</h4>
+
+	<p>
+	NY Borough: <br />
+	<select name="boB">
+		<option value="Bronx">Bronx</option>
+		<option value="Brooklyn">Brooklyn</option>
+		<option value="Manhattan">Manhattan</option>
+		<option value="Queens">Queens</option>
+		<option value="Staten Island">Staten Island</option>
+	</select>
+	</p>
+        
+	<p>
+	Year: <br />
+	<select name="yB">
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		</select>
+	</p>
+
+	<div style="width:550px;height:3px;border:4px solid #AACBE2;"></div>
+	<p><br/>
+	<input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+	</p>
+</form>
+
+</div>
+</div>

@@ -1,0 +1,30 @@
+<!doctype html>
+<title>index</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_xplor.css')}}'>
+<div class=page>
+  <h1>Possible explorations</h1>
+  <div class=metanav>
+
+<form action="/index" method="POST" action='index'> 
+	<div>   
+        <input type="radio" name="option" value="feat" checked/>  A selected feature <br/>          
+	</div>
+
+	<div>
+        <input type="radio" name="option" value="trend" />  A trend  <br/>
+	</div>
+
+	<div>
+	<input type="radio" name="option" value="distrib" />  A territorial distribution  <br/>        
+	</div>
+	<br />
+        <input type="submit" value="Submit">
+</form>
+
+
+
+<br/><br/> <br/>
+<div style="width:550px;height:3px;border:4px solid #AACBE2;"></div>
+
+</div>
+</div>
