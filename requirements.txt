@@ -9,7 +9,6 @@ ipython-genutils==0.1.0
 ipywidgets==4.1.1
 itsdangerous==0.24
 Jinja2==2.7.2
-json-py==3.4
 jsonschema==2.3.0
 jupyter-client==4.1.1
 jupyter-core==4.0.6
