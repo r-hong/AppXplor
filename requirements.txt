@@ -4,10 +4,6 @@ bokeh==0.10.0
 certifi==2015.9.6.2
 argparse==1.2.1
 flask==0.10.1
-ipykernel==4.1.1
-ipython-genutils==0.1.0
-ipywidgets==4.1.1
-itsdangerous==0.24
 Jinja2==2.7.2
 jsonschema==2.3.0
 jupyter-client==4.1.1
@@ -15,7 +11,6 @@ jupyter-core==4.0.6
 mistune==0.7.1
 nbconvert==4.0.0
 nbformat==4.0.1
-notebook==4.0.6
 pandas==0.16.1
 path.py==8.1.2
 pickleshare==0.5
@@ -23,11 +18,9 @@ ptyprocess==0.5
 python-dateutil==2.4.2
 pyyaml==3.11
 pyzmq==14.7.0
-seaborn==0.6.0
 terminado==0.5
 tornado==4.2.1
 traitlets==4.0.0
-virtualenv==13.1.2
 werkzeug==0.10.4
 docutils==0.11
 epydoc==3.0.1
