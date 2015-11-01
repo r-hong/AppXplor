@@ -1,5 +1,8 @@
 This repository contains python/html code for an app named xplor. The app uses data from several public databases from the New York City open data website (https://data.cityofnewyork.us).
 
+You can access the app at: https://xplorny.herokuapp.com/index
+
+
 Intended use: This is an exploratory prototype application to showcase the use of several tools and techniques:
 
 *integration of python - html using flask to process user requests.
