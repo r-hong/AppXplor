@@ -91,7 +91,7 @@ def getTrend():
 		defaults.width = 450
 		defaults.height = 350	
 		box_plot = BoxPlot(cleanData, label='year',title=app_xplor.vars['bo'])
-		output_file("boxplot.html")
+		output_file("templates/results.html")
                 show(
                     vplot(
                         hplot(box_plot)
@@ -147,7 +147,7 @@ def getDistrib():
                 defaults.height = 350   
                 box_plot = BoxPlot(cleanData, label='Borough',title=str(app_xplor.vars['year']))
 		#box_plot = BoxPlot(cleanData, label='Borough',title='Year')
-                output_file("boxplot.html")
+                output_file("templates/results.html")
                 show(
                     vplot(
                         hplot(box_plot)
@@ -217,7 +217,7 @@ def getFeature():
 		tB=str(app_xplor.vars['boB'])+'/'+str(app_xplor.vars['yB']) + '/' + str(app_xplor.vars['feat'])
 		histA = Histogram(cleanData['A'], title=tA)
 		histB = Histogram(cleanData['B'], title=tB)
-		output_file("histograms.html")
+		output_file("templates/results.html")
 		show(
 		    vplot(
         		hplot(histA,histB)
@@ -236,6 +236,11 @@ def goTrend():
 @app_xplor.route('/goDistrib',methods=['GET','POST'])
 def goDistrib():
         return render_template('distribResults.html')
+
+@app_xplor.route('/results',methods=['GET','POST'])
+def goResults():
+        return render_template('results.html')
+
 
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 5000))
