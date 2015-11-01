@@ -1,1 +1,1 @@
-web: python xplorny.py --log-file -
+web: python xplorny.py

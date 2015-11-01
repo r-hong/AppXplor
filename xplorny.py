@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+import os
+import sys
 import pandas as pd
 import urllib
 from bokeh.plotting import *
@@ -235,4 +238,5 @@ def goDistrib():
         return render_template('distribResults.html')
 
 if __name__ == "__main__":
-	app_xplor.run()
+	port = int(os.environ.get("PORT", 5000))
+	app_xplor.run(host='0.0.0.0', port=port)
