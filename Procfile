@@ -1,1 +1,1 @@
-web: gunicorn xplorny.wsgi --log-file -
+web: python xplorny.py --log-file -
